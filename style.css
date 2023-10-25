@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter-B";
+  src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Inter-EB";
+  src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  list-style: none;
+}
+
+.header-nav-list-item {
+  font-family: "Inter";
+  color: hsl(236, 13%, 42%);
+  cursor: pointer;
+}
+
+.hero {
+  /* display: flex;
+  gap: 1rem; */
+  /* align-items: center; */
+  display: grid;
+  gap: 2rem;
+  place-items: center;
+  grid-template-columns: 3fr 1fr;
+}
+
+.hero-left-image-container {
+ /* grid-area: image; */
+}
+
+#image-web-3-desktop {
+ max-width: 100%
+}
+
+.hero-left-content {
+ /* grid-area: heading; */
+}
+
+.hero-right {
+ /* grid-area: new; */
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+#image-web-3-mobile {
+  display: none;
+}
+
+.hero-left-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-family: "Inter-EB";
+  color: hsl(240, 100%, 5%);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+
+.hero-text {
+ display: flex;
+ flex-direction: column;
+ font-family: "Inter";
+ /* display: block; */
+}
+.hero-text-para {
+  color: hsl(236, 13%, 42%)
+  font-family: "Inter-EB";
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.hero-text-btn {
+ display: inline;
+  padding: 1rem;
+  letter-spacing: 2px;
+  border: none;
+  font-family: "Inter-B";
+  outline: none;
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  background-color: hsl(240, 100%, 5%);
+  height: 100%;
+  border-radius: 5px;
+}
+
+.hero-right-heading {
+  font-size: 2rem;
+  font-family: "Inter-B";
+  color: hsl(35, 77%, 62%);
+}
+
+.hero-right-new {
+  padding: 1rem 0;
+  font-family: "Inter";
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+}
+
+.hero-right-new h3 {
+  color: hsl(0, 0%, 100%);
+}
+
+.hero-right-new p {
+  color: hsl(236, 13%, 42%);
+  margin-top: 6px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-img img {
+  width: 120px;
+  height: 120px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* justify-content: space-around; */
+}
+
+.card-number {
+  font-family: "Inter-EB";
+  color: hsl(236, 13%, 42%);
+  font-size: 2rem;
+}
+
+.card-heading {
+  font-family: "Inter-EB";
+  color: hsl(240, 100%, 5%);
+}
+
+.card-text {
+  font-family: "Inter";
+  color: hsl(236, 13%, 42%);
+}
+
+@media (width <= 1024px) {
+ .hero {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ }
+}
+
+@media (width <= 800px) {
+ .hero-heading {
+  font-size: 2rem;
+ }
+
+ .hero-left-content {
+  flex-direction: column;
+ }
+
+ .app {
+  padding: 1.5rem;
+ }
+}
+
+.header {
+ align-items: center;
+}
+
+@media (width <= 520px) {
+ .header {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+ }
+
+ html {
+  font-size: 14px;
+ }
+
+ #image-web-3-desktop {
+  display: none;
+ }
+
+ #image-web-3-mobile {
+  display: block;
+  max-width: 100%;
+ }
+
+ .header-nav {
+  width: 100%;
+ }
+
+ .header-nav-list {
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+ }
+
+ .app {
+  gap: 1.5rem;
+ }
+}
+
+@media (width <= 400px) {
+ #image-web-3-mobile {
+  margin: 0 auto;
+  width: 340px;
+ }
+}
